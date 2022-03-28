@@ -1,0 +1,14 @@
+{
+  "name": "yap",
+  "version": "1.0.0",
+  "description": "An email tracker for the everyday yapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Mauricio Del Castillo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
