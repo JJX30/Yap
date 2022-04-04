@@ -18,7 +18,7 @@ async function sendMail() {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "mauriciodelcas30@gmail.com",
+        user: process.env.FROM,
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
@@ -26,8 +26,8 @@ async function sendMail() {
       },
     });
     const mailOptions = {
-      from: "mauriciodelcas30@gmail.com",
-      to: "aidenesin@gmail.com",
+      from: process.env.FROM,
+      to: process.env.TO,
       subject: "hello from gmail using API",
       text: "HEELLOOOO FROM GMAIL EMAIL USING API WORKING@!!!!!",
       html: "<h1>SUP AIDEN!</h1>",
